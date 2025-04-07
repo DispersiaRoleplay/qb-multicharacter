@@ -1,0 +1,76 @@
+local Translations = {
+    notifications = {
+        ["char_deleted"] = "Персонажа видалено!",
+        ["deleted_other_char"] = "Ви успішно видалили персонажа з citizen id %{citizenid}.",
+        ["forgot_citizenid"] = "Ви забули ввести citizen id!",
+    },
+
+    commands = {
+        -- /deletechar
+        ["deletechar_description"] = "Видаляє персонажа іншого гравця",
+        ["citizenid"] = "ID громадянина",
+        ["citizenid_help"] = "ID персонажа, якого ви хочете видалити",
+
+        -- /logout
+        ["logout_description"] = "Вийти з персонажа (тільки для адміністрації)",
+
+        -- /closeNUI
+        ["closeNUI_description"] = "Закрити Multi NUI",
+    },
+
+    misc = {
+        ["droppedplayer"] = "Ви були відключені від Серверу",
+    },
+
+    ui = {
+        characters_header = "Мої персонажі",
+        emptyslot = "Порожній слот",
+        play_button = "Грати",
+        create_button = "Створити персонажа",
+        delete_button = "Видалити персонажа",
+
+        -- Інформація про персонажа
+        charinfo_header = "Інформація про персонажа",
+        charinfo_description = "Виберіть слот, щоб переглянути всю інформацію про персонажа.",
+        name = "Ім’я",
+        male = "Чоловік",
+        female = "Жінка",
+        firstname = "Ім’я",
+        lastname = "Прізвище",
+        nationality = "Національність",
+        gender = "Стать",
+        birthdate = "Дата народження",
+        job = "Робота",
+        jobgrade = "Посада",
+        cash = "Готівка",
+        bank = "Банк",
+        phonenumber = "Номер телефону",
+        accountnumber = "Номер рахунку",
+
+        chardel_header = "Реєстрація персонажа",
+
+        -- Видалення персонажа
+        deletechar_header = "Видалити персонажа",
+        deletechar_description = "Ви впевнені, що хочете видалити цього персонажа?",
+
+        -- Кнопки
+        cancel = "Скасувати",
+        confirm = "Підтвердити",
+
+        -- Завантаження
+        retrieving_playerdata = "Отримання даних гравця",
+        validating_playerdata = "Перевірка даних гравця",
+        retrieving_characters = "Завантаження персонажів",
+        validating_characters = "Перевірка персонажів",
+
+        -- Повідомлення
+        ran_into_issue = "Виникла помилка",
+        profanity = "Схоже, ви намагаєтесь використати нецензурні або заборонені слова в імені чи національності!",
+        forgotten_field = "Схоже, ви забули заповнити одне або кілька полів!"
+    }
+}
+
+Lang = Lang or Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})
